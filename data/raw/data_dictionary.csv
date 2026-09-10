@@ -1,0 +1,45 @@
+﻿Field Name,Type,Allowed Values / Range,Description
+AdditionalCostsGBP,Decimal,"£0-£50,000",Additional costs incurred because of the service failure.
+AgeBand,Categorical,"Under 18, 18-34, 35-49, 50-64, 65-79, 80+",Age group of the affected person.
+AnxietyReported,Boolean,"Yes, No",Whether anxiety was reported as an impact.
+BereavedPerson,Boolean,"Yes, No",Indicates whether the complaint involved bereavement.
+CaseComplexityScore,Integer,1-10,Assessed complexity of the case.
+CaseCreatedDate,Date,YYYY-MM-DD,Date the complaint was received.
+CaseReference,String,Unique identifier,Unique case reference.
+ComplaintCategory,Categorical,"Delay, Communication, Clinical Decision, Administrative Error, Incorrect Advice, Service Quality, Lost Information, Eligibility Decision",Primary complaint category.
+DelayInResolutionDays,Integer,"0-2,000",Length of delay before resolution or response.
+DepressionReported,Boolean,"Yes, No",Whether depression was reported as an impact.
+DeteriorationInHealth,Boolean,"Yes, No",Whether health deteriorated due to the issue.
+DirectFinancialLossGBP,Decimal,"£0-£100,000",Direct measurable financial losses suffered.
+DurationAffectedDays,Integer,"1-3,000",Number of days the person was affected.
+EmotionalImpactLevel,Categorical,"Minimal, Low, Moderate, Significant, Severe",Assessed emotional impact.
+EscalatedInternally,Boolean,"Yes, No",Whether concerns were escalated within the organisation.
+EstimatedImpactScore,Integer,1-100,Internal assessment of overall impact.
+EstimatedRiskScore,Integer,1-100,Internal assessment of case risk.
+EvidenceStrength,Categorical,"Limited, Moderate, Strong",Strength of supporting evidence.
+ExpectedFinancialRedressGBP,Decimal,"£0-£75,000",Estimated financial remedy recommendation.
+FailureTypePrimary,Categorical,"Delay, Communication, Policy Application, Record Keeping, Clinical Failure, Administrative Failure",Primary service failure type.
+FailureTypeSecondary,Categorical,None plus primary values,Secondary service failure type if applicable.
+InvestigationRoute,Categorical,"Standard, Fast Track, Escalated",Investigation pathway assigned.
+Jurisdiction,Categorical,"Health, Parliamentary",Jurisdiction responsible for handling the complaint.
+LegalChallengePotential,Boolean,"Yes, No",Whether the case may lead to legal challenge.
+LongTermImpactFlag,Boolean,"Yes, No",Indicates long-term impact identified.
+LostIncomeGBP,Decimal,"£0-£100,000",Income lost as a consequence of the issue.
+MultipleComplaintThemes,Boolean,"Yes, No",Whether multiple complaint themes are present.
+NumberOfDependentsAffected,Integer,0-10,Number of other people directly affected.
+NumberOfOrganisationsInvolved,Integer,1-5,Organisations involved in the complaint.
+NumberOfServiceFailures,Integer,1-20,Identified service failures within the case.
+OmbudsmanInvestigationRequired,Boolean,"Yes, No",Whether a formal investigation was deemed necessary.
+OrganisationType,Categorical,"NHS Trust, GP Practice, Integrated Care Board, Government Department, Agency, Local Authority",Organisation complained about.
+PhysicalImpactLevel,Categorical,"None, Minor, Moderate, Significant, Severe",Assessed physical or physiological impact.
+PredictedRemedyBand,Categorical,"A, B, C, D, E, F",Internal remedy recommendation band.
+PrimaryVulnerability,Categorical,"None, Physical Health, Mental Health, Learning Disability, Homelessness, Financial Hardship, Caring Responsibilities",Primary vulnerability identified.
+PriorComplaintsRaised,Integer,0-15,Number of related complaints previously raised.
+RecoveryTimeMonths,Integer,0-120,Estimated recovery period.
+RepeatedFailurePattern,Boolean,"Yes, No",Indicates recurring failures by the organisation.
+RepeatFailuresCount,Integer,0-10,Number of repeated failures identified.
+SafeguardingConcern,Boolean,"Yes, No",Presence of safeguarding concerns.
+ServiceArea,Categorical,"Acute Care, Primary Care, Mental Health, Community Care, Social Care, Benefits, Immigration, Taxation, Housing, Justice",Service area associated with the complaint.
+SeverityScore,Integer,"1, 2, 3, 4, 5, 6",Target variable representing the assessed severity of injustice.
+SleepDisruptionReported,Boolean,"Yes, No",Whether sleep disruption was reported.
+VulnerabilityLevel,Categorical,"None, Low, Moderate, High",Assessed vulnerability of the affected person.
