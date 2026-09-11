@@ -1,0 +1,501 @@
+CaseReference,PredictedSeverityScore,PredictedTriageOutcome
+HLD-000001,6,Progressed
+HLD-000002,5,Progressed
+HLD-000003,1,Not progressed
+HLD-000004,4,Progressed
+HLD-000005,4,Progressed
+HLD-000006,3,Not progressed
+HLD-000007,2,Not progressed
+HLD-000008,3,Not progressed
+HLD-000009,2,Not progressed
+HLD-000010,4,Progressed
+HLD-000011,2,Not progressed
+HLD-000012,4,Progressed
+HLD-000013,6,Progressed
+HLD-000014,1,Not progressed
+HLD-000015,1,Not progressed
+HLD-000016,4,Progressed
+HLD-000017,6,Progressed
+HLD-000018,4,Progressed
+HLD-000019,3,Not progressed
+HLD-000020,2,Not progressed
+HLD-000021,5,Progressed
+HLD-000022,4,Progressed
+HLD-000023,5,Progressed
+HLD-000024,2,Not progressed
+HLD-000025,1,Not progressed
+HLD-000026,4,Progressed
+HLD-000027,2,Not progressed
+HLD-000028,2,Not progressed
+HLD-000029,2,Not progressed
+HLD-000030,4,Progressed
+HLD-000031,2,Not progressed
+HLD-000032,1,Not progressed
+HLD-000033,1,Not progressed
+HLD-000034,4,Progressed
+HLD-000035,4,Progressed
+HLD-000036,4,Progressed
+HLD-000037,4,Progressed
+HLD-000038,4,Progressed
+HLD-000039,5,Progressed
+HLD-000040,1,Not progressed
+HLD-000041,5,Progressed
+HLD-000042,1,Not progressed
+HLD-000043,1,Not progressed
+HLD-000044,1,Not progressed
+HLD-000045,4,Progressed
+HLD-000046,4,Progressed
+HLD-000047,1,Not progressed
+HLD-000048,6,Progressed
+HLD-000049,1,Not progressed
+HLD-000050,4,Progressed
+HLD-000051,4,Progressed
+HLD-000052,5,Progressed
+HLD-000053,6,Progressed
+HLD-000054,4,Progressed
+HLD-000055,4,Progressed
+HLD-000056,1,Not progressed
+HLD-000057,1,Not progressed
+HLD-000058,6,Progressed
+HLD-000059,1,Not progressed
+HLD-000060,5,Progressed
+HLD-000061,6,Progressed
+HLD-000062,1,Not progressed
+HLD-000063,1,Not progressed
+HLD-000064,5,Progressed
+HLD-000065,2,Not progressed
+HLD-000066,1,Not progressed
+HLD-000067,2,Not progressed
+HLD-000068,2,Not progressed
+HLD-000069,6,Progressed
+HLD-000070,1,Not progressed
+HLD-000071,4,Progressed
+HLD-000072,6,Progressed
+HLD-000073,1,Not progressed
+HLD-000074,5,Progressed
+HLD-000075,1,Not progressed
+HLD-000076,1,Not progressed
+HLD-000077,5,Progressed
+HLD-000078,4,Progressed
+HLD-000079,4,Progressed
+HLD-000080,4,Progressed
+HLD-000081,1,Not progressed
+HLD-000082,1,Not progressed
+HLD-000083,6,Progressed
+HLD-000084,1,Not progressed
+HLD-000085,4,Progressed
+HLD-000086,4,Progressed
+HLD-000087,6,Progressed
+HLD-000088,4,Progressed
+HLD-000089,5,Progressed
+HLD-000090,3,Not progressed
+HLD-000091,1,Not progressed
+HLD-000092,1,Not progressed
+HLD-000093,2,Not progressed
+HLD-000094,1,Not progressed
+HLD-000095,5,Progressed
+HLD-000096,6,Progressed
+HLD-000097,1,Not progressed
+HLD-000098,5,Progressed
+HLD-000099,4,Progressed
+HLD-000100,2,Not progressed
+HLD-000101,5,Progressed
+HLD-000102,1,Not progressed
+HLD-000103,4,Progressed
+HLD-000104,2,Not progressed
+HLD-000105,1,Not progressed
+HLD-000106,4,Progressed
+HLD-000107,1,Not progressed
+HLD-000108,1,Not progressed
+HLD-000109,1,Not progressed
+HLD-000110,5,Progressed
+HLD-000111,1,Not progressed
+HLD-000112,1,Not progressed
+HLD-000113,3,Not progressed
+HLD-000114,4,Progressed
+HLD-000115,2,Not progressed
+HLD-000116,2,Not progressed
+HLD-000117,4,Progressed
+HLD-000118,1,Not progressed
+HLD-000119,1,Not progressed
+HLD-000120,1,Not progressed
+HLD-000121,4,Progressed
+HLD-000122,1,Not progressed
+HLD-000123,4,Progressed
+HLD-000124,2,Not progressed
+HLD-000125,2,Not progressed
+HLD-000126,4,Progressed
+HLD-000127,2,Not progressed
+HLD-000128,4,Progressed
+HLD-000129,5,Progressed
+HLD-000130,2,Not progressed
+HLD-000131,1,Not progressed
+HLD-000132,4,Progressed
+HLD-000133,6,Progressed
+HLD-000134,3,Not progressed
+HLD-000135,1,Not progressed
+HLD-000136,1,Not progressed
+HLD-000137,1,Not progressed
+HLD-000138,6,Progressed
+HLD-000139,1,Not progressed
+HLD-000140,1,Not progressed
+HLD-000141,5,Progressed
+HLD-000142,1,Not progressed
+HLD-000143,1,Not progressed
+HLD-000144,4,Progressed
+HLD-000145,4,Progressed
+HLD-000146,5,Progressed
+HLD-000147,3,Not progressed
+HLD-000148,2,Not progressed
+HLD-000149,2,Not progressed
+HLD-000150,1,Not progressed
+HLD-000151,1,Not progressed
+HLD-000152,1,Not progressed
+HLD-000153,4,Progressed
+HLD-000154,6,Progressed
+HLD-000155,4,Progressed
+HLD-000156,4,Progressed
+HLD-000157,4,Progressed
+HLD-000158,4,Progressed
+HLD-000159,1,Not progressed
+HLD-000160,1,Not progressed
+HLD-000161,4,Progressed
+HLD-000162,4,Progressed
+HLD-000163,2,Not progressed
+HLD-000164,4,Progressed
+HLD-000165,4,Progressed
+HLD-000166,6,Progressed
+HLD-000167,1,Not progressed
+HLD-000168,4,Progressed
+HLD-000169,3,Not progressed
+HLD-000170,4,Progressed
+HLD-000171,1,Not progressed
+HLD-000172,1,Not progressed
+HLD-000173,1,Not progressed
+HLD-000174,1,Not progressed
+HLD-000175,5,Progressed
+HLD-000176,1,Not progressed
+HLD-000177,1,Not progressed
+HLD-000178,4,Progressed
+HLD-000179,1,Not progressed
+HLD-000180,4,Progressed
+HLD-000181,6,Progressed
+HLD-000182,1,Not progressed
+HLD-000183,5,Progressed
+HLD-000184,1,Not progressed
+HLD-000185,1,Not progressed
+HLD-000186,4,Progressed
+HLD-000187,4,Progressed
+HLD-000188,1,Not progressed
+HLD-000189,1,Not progressed
+HLD-000190,2,Not progressed
+HLD-000191,6,Progressed
+HLD-000192,4,Progressed
+HLD-000193,1,Not progressed
+HLD-000194,5,Progressed
+HLD-000195,1,Not progressed
+HLD-000196,4,Progressed
+HLD-000197,4,Progressed
+HLD-000198,1,Not progressed
+HLD-000199,4,Progressed
+HLD-000200,4,Progressed
+HLD-000201,4,Progressed
+HLD-000202,4,Progressed
+HLD-000203,2,Not progressed
+HLD-000204,2,Not progressed
+HLD-000205,5,Progressed
+HLD-000206,1,Not progressed
+HLD-000207,4,Progressed
+HLD-000208,1,Not progressed
+HLD-000209,4,Progressed
+HLD-000210,4,Progressed
+HLD-000211,5,Progressed
+HLD-000212,4,Progressed
+HLD-000213,4,Progressed
+HLD-000214,4,Progressed
+HLD-000215,1,Not progressed
+HLD-000216,4,Progressed
+HLD-000217,4,Progressed
+HLD-000218,4,Progressed
+HLD-000219,4,Progressed
+HLD-000220,4,Progressed
+HLD-000221,4,Progressed
+HLD-000222,1,Not progressed
+HLD-000223,5,Progressed
+HLD-000224,5,Progressed
+HLD-000225,1,Not progressed
+HLD-000226,6,Progressed
+HLD-000227,2,Not progressed
+HLD-000228,1,Not progressed
+HLD-000229,2,Not progressed
+HLD-000230,1,Not progressed
+HLD-000231,4,Progressed
+HLD-000232,1,Not progressed
+HLD-000233,1,Not progressed
+HLD-000234,1,Not progressed
+HLD-000235,2,Not progressed
+HLD-000236,4,Progressed
+HLD-000237,1,Not progressed
+HLD-000238,4,Progressed
+HLD-000239,6,Progressed
+HLD-000240,3,Not progressed
+HLD-000241,6,Progressed
+HLD-000242,2,Not progressed
+HLD-000243,4,Progressed
+HLD-000244,4,Progressed
+HLD-000245,1,Not progressed
+HLD-000246,6,Progressed
+HLD-000247,5,Progressed
+HLD-000248,6,Progressed
+HLD-000249,1,Not progressed
+HLD-000250,4,Progressed
+HLD-000251,1,Not progressed
+HLD-000252,6,Progressed
+HLD-000253,1,Not progressed
+HLD-000254,1,Not progressed
+HLD-000255,5,Progressed
+HLD-000256,4,Progressed
+HLD-000257,2,Not progressed
+HLD-000258,4,Progressed
+HLD-000259,4,Progressed
+HLD-000260,6,Progressed
+HLD-000261,1,Not progressed
+HLD-000262,4,Progressed
+HLD-000263,1,Not progressed
+HLD-000264,4,Progressed
+HLD-000265,5,Progressed
+HLD-000266,1,Not progressed
+HLD-000267,4,Progressed
+HLD-000268,1,Not progressed
+HLD-000269,4,Progressed
+HLD-000270,4,Progressed
+HLD-000271,5,Progressed
+HLD-000272,4,Progressed
+HLD-000273,1,Not progressed
+HLD-000274,1,Not progressed
+HLD-000275,6,Progressed
+HLD-000276,6,Progressed
+HLD-000277,4,Progressed
+HLD-000278,1,Not progressed
+HLD-000279,5,Progressed
+HLD-000280,5,Progressed
+HLD-000281,1,Not progressed
+HLD-000282,4,Progressed
+HLD-000283,3,Not progressed
+HLD-000284,1,Not progressed
+HLD-000285,2,Not progressed
+HLD-000286,2,Not progressed
+HLD-000287,4,Progressed
+HLD-000288,2,Not progressed
+HLD-000289,1,Not progressed
+HLD-000290,4,Progressed
+HLD-000291,1,Not progressed
+HLD-000292,5,Progressed
+HLD-000293,5,Progressed
+HLD-000294,1,Not progressed
+HLD-000295,5,Progressed
+HLD-000296,2,Not progressed
+HLD-000297,1,Not progressed
+HLD-000298,4,Progressed
+HLD-000299,4,Progressed
+HLD-000300,5,Progressed
+HLD-000301,6,Progressed
+HLD-000302,5,Progressed
+HLD-000303,1,Not progressed
+HLD-000304,4,Progressed
+HLD-000305,4,Progressed
+HLD-000306,6,Progressed
+HLD-000307,1,Not progressed
+HLD-000308,1,Not progressed
+HLD-000309,5,Progressed
+HLD-000310,2,Not progressed
+HLD-000311,5,Progressed
+HLD-000312,1,Not progressed
+HLD-000313,4,Progressed
+HLD-000314,2,Not progressed
+HLD-000315,4,Progressed
+HLD-000316,4,Progressed
+HLD-000317,1,Not progressed
+HLD-000318,4,Progressed
+HLD-000319,4,Progressed
+HLD-000320,2,Not progressed
+HLD-000321,6,Progressed
+HLD-000322,1,Not progressed
+HLD-000323,1,Not progressed
+HLD-000324,1,Not progressed
+HLD-000325,6,Progressed
+HLD-000326,1,Not progressed
+HLD-000327,1,Not progressed
+HLD-000328,4,Progressed
+HLD-000329,1,Not progressed
+HLD-000330,1,Not progressed
+HLD-000331,1,Not progressed
+HLD-000332,1,Not progressed
+HLD-000333,4,Progressed
+HLD-000334,4,Progressed
+HLD-000335,1,Not progressed
+HLD-000336,1,Not progressed
+HLD-000337,1,Not progressed
+HLD-000338,4,Progressed
+HLD-000339,2,Not progressed
+HLD-000340,3,Not progressed
+HLD-000341,1,Not progressed
+HLD-000342,1,Not progressed
+HLD-000343,1,Not progressed
+HLD-000344,4,Progressed
+HLD-000345,5,Progressed
+HLD-000346,1,Not progressed
+HLD-000347,2,Not progressed
+HLD-000348,1,Not progressed
+HLD-000349,1,Not progressed
+HLD-000350,2,Not progressed
+HLD-000351,1,Not progressed
+HLD-000352,5,Progressed
+HLD-000353,2,Not progressed
+HLD-000354,5,Progressed
+HLD-000355,2,Not progressed
+HLD-000356,4,Progressed
+HLD-000357,5,Progressed
+HLD-000358,1,Not progressed
+HLD-000359,1,Not progressed
+HLD-000360,3,Not progressed
+HLD-000361,2,Not progressed
+HLD-000362,2,Not progressed
+HLD-000363,6,Progressed
+HLD-000364,6,Progressed
+HLD-000365,5,Progressed
+HLD-000366,4,Progressed
+HLD-000367,1,Not progressed
+HLD-000368,6,Progressed
+HLD-000369,2,Not progressed
+HLD-000370,2,Not progressed
+HLD-000371,5,Progressed
+HLD-000372,4,Progressed
+HLD-000373,4,Progressed
+HLD-000374,2,Not progressed
+HLD-000375,4,Progressed
+HLD-000376,1,Not progressed
+HLD-000377,1,Not progressed
+HLD-000378,4,Progressed
+HLD-000379,1,Not progressed
+HLD-000380,4,Progressed
+HLD-000381,4,Progressed
+HLD-000382,6,Progressed
+HLD-000383,6,Progressed
+HLD-000384,4,Progressed
+HLD-000385,1,Not progressed
+HLD-000386,1,Not progressed
+HLD-000387,1,Not progressed
+HLD-000388,1,Not progressed
+HLD-000389,1,Not progressed
+HLD-000390,1,Not progressed
+HLD-000391,4,Progressed
+HLD-000392,4,Progressed
+HLD-000393,5,Progressed
+HLD-000394,1,Not progressed
+HLD-000395,1,Not progressed
+HLD-000396,1,Not progressed
+HLD-000397,4,Progressed
+HLD-000398,5,Progressed
+HLD-000399,4,Progressed
+HLD-000400,1,Not progressed
+HLD-000401,1,Not progressed
+HLD-000402,5,Progressed
+HLD-000403,4,Progressed
+HLD-000404,4,Progressed
+HLD-000405,1,Not progressed
+HLD-000406,1,Not progressed
+HLD-000407,4,Progressed
+HLD-000408,4,Progressed
+HLD-000409,5,Progressed
+HLD-000410,4,Progressed
+HLD-000411,4,Progressed
+HLD-000412,5,Progressed
+HLD-000413,4,Progressed
+HLD-000414,4,Progressed
+HLD-000415,5,Progressed
+HLD-000416,1,Not progressed
+HLD-000417,1,Not progressed
+HLD-000418,4,Progressed
+HLD-000419,3,Not progressed
+HLD-000420,5,Progressed
+HLD-000421,1,Not progressed
+HLD-000422,4,Progressed
+HLD-000423,5,Progressed
+HLD-000424,1,Not progressed
+HLD-000425,4,Progressed
+HLD-000426,4,Progressed
+HLD-000427,1,Not progressed
+HLD-000428,2,Not progressed
+HLD-000429,1,Not progressed
+HLD-000430,3,Not progressed
+HLD-000431,1,Not progressed
+HLD-000432,4,Progressed
+HLD-000433,1,Not progressed
+HLD-000434,2,Not progressed
+HLD-000435,4,Progressed
+HLD-000436,4,Progressed
+HLD-000437,2,Not progressed
+HLD-000438,1,Not progressed
+HLD-000439,1,Not progressed
+HLD-000440,1,Not progressed
+HLD-000441,5,Progressed
+HLD-000442,4,Progressed
+HLD-000443,1,Not progressed
+HLD-000444,1,Not progressed
+HLD-000445,5,Progressed
+HLD-000446,4,Progressed
+HLD-000447,4,Progressed
+HLD-000448,6,Progressed
+HLD-000449,4,Progressed
+HLD-000450,4,Progressed
+HLD-000451,1,Not progressed
+HLD-000452,1,Not progressed
+HLD-000453,1,Not progressed
+HLD-000454,1,Not progressed
+HLD-000455,4,Progressed
+HLD-000456,2,Not progressed
+HLD-000457,2,Not progressed
+HLD-000458,1,Not progressed
+HLD-000459,1,Not progressed
+HLD-000460,4,Progressed
+HLD-000461,1,Not progressed
+HLD-000462,6,Progressed
+HLD-000463,1,Not progressed
+HLD-000464,4,Progressed
+HLD-000465,1,Not progressed
+HLD-000466,4,Progressed
+HLD-000467,1,Not progressed
+HLD-000468,1,Not progressed
+HLD-000469,4,Progressed
+HLD-000470,4,Progressed
+HLD-000471,1,Not progressed
+HLD-000472,2,Not progressed
+HLD-000473,1,Not progressed
+HLD-000474,1,Not progressed
+HLD-000475,3,Not progressed
+HLD-000476,5,Progressed
+HLD-000477,4,Progressed
+HLD-000478,4,Progressed
+HLD-000479,1,Not progressed
+HLD-000480,1,Not progressed
+HLD-000481,1,Not progressed
+HLD-000482,6,Progressed
+HLD-000483,4,Progressed
+HLD-000484,1,Not progressed
+HLD-000485,1,Not progressed
+HLD-000486,5,Progressed
+HLD-000487,5,Progressed
+HLD-000488,5,Progressed
+HLD-000489,5,Progressed
+HLD-000490,2,Not progressed
+HLD-000491,2,Not progressed
+HLD-000492,4,Progressed
+HLD-000493,1,Not progressed
+HLD-000494,4,Progressed
+HLD-000495,2,Not progressed
+HLD-000496,5,Progressed
+HLD-000497,1,Not progressed
+HLD-000498,1,Not progressed
+HLD-000499,6,Progressed
+HLD-000500,1,Not progressed
