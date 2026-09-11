@@ -56,13 +56,13 @@ severity-score-triage-model/
 
 I used two datasets supplied as part of the assessment:
 
-- **Training Dataset** — 2,000 labelled complaint cases containing `SeverityScore`.
-- **Holdback Dataset** — 500 unlabelled cases used only for my final predictions.
-- **Data Dictionary** — definitions, allowed values, and expected ranges for the
+- **Training Dataset** - 2,000 labelled complaint cases containing `SeverityScore`.
+- **Holdback Dataset** - 500 unlabelled cases used only for my final predictions.
+- **Data Dictionary** - definitions, allowed values, and expected ranges for the
   supplied fields.
 
 I kept the original assessment data unmodified under `data/raw/` and did not edit it
-during preprocessing. I also kept the holdback dataset separate from model development —
+during preprocessing. I also kept the holdback dataset separate from model development 
 I never used it for feature selection, hyperparameter tuning, threshold selection, or
 model comparison; it was only used once, at the end, to generate final predictions.
 
