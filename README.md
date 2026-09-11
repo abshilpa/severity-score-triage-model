@@ -148,9 +148,9 @@ features. I'm recording this documentation gap here rather than silently ignorin
 
 I engineered features to reflect the severity factors described in the assessment brief.
 
-**Ordinal features:** I ordinally encoded naturally ordered categorical variables —
+**Ordinal features:** I ordinally encoded naturally ordered categorical variables 
 `EmotionalImpactLevel`, `PhysicalImpactLevel`, `VulnerabilityLevel`, `EvidenceStrength`,
-`AgeBand` — to preserve their ordering rather than treating them as unordered categories.
+`AgeBand`  to preserve their ordering rather than treating them as unordered categories.
 
 **Derived features:** I built `NegativeImpactFlagCount`, `TotalIncurredFinancialImpactGBP`,
 and `VulnerabilityImpactInteraction` to capture combinations of financial impact,
@@ -168,7 +168,7 @@ information generated after, or during, the severity assessment process itself.
 During my exploratory analysis, I found `EstimatedImpactScore` and `EstimatedRiskScore`
 showed a very strong relationship with `SeverityScore`. Later, when I ran SHAP on an
 initial model, I found `PredictedRemedyBand` and `ExpectedFinancialRedressGBP` were among
-the strongest predictors — something my earlier numeric-only correlation check had missed,
+the strongest predictors  something my earlier numeric-only correlation check had missed,
 since `PredictedRemedyBand` is categorical. All four are described in the Data Dictionary
 as internal assessments, estimates, or recommendations.
 
@@ -206,10 +206,10 @@ I decided accuracy alone wasn't sufficient for this problem. Since the brief spe
 low tolerance for severe cases being classified as low severity, I evaluated both the
 six-class prediction task and the operational binary triage decision.
 
-**Six-class evaluation** — I looked at accuracy, macro F1, weighted F1, per-class
+**Six-class evaluation**  I looked at accuracy, macro F1, weighted F1, per-class
 precision/recall, and the confusion matrix.
 
-**Binary triage evaluation** — I grouped the six severity classes into 1–3 (Not
+**Binary triage evaluation**  I grouped the six severity classes into 1–3 (Not
 progressed) and 4–6 (Progressed), and treated **recall on the Progressed group** as my key
 business metric: the proportion of genuinely severe cases successfully flagged for
 investigation.
@@ -235,9 +235,9 @@ cases as "Progressed", versus the ~30% base rate I observed in training.
 
 My final prediction process uses a two-stage decision:
 
-- **Stage 1 — Binary triage:** the calibrated probability threshold determines whether a
+- **Stage 1  Binary triage:** the calibrated probability threshold determines whether a
   case is 1–3 (Not progressed) or 4–6 (Progressed).
-- **Stage 2 — Severity score:** I then take the most likely severity class *within* the
+- **Stage 2  Severity score:** I then take the most likely severity class *within* the
   selected band as the final `PredictedSeverityScore`.
 
 This ensures the numeric severity prediction is always consistent with the triage decision
@@ -248,7 +248,7 @@ it implies.
 I used SHAP (`TreeExplainer`) to investigate the behaviour of my final Random Forest
 model. The important drivers I found relate to recovery time, vulnerability, emotional
 impact, physical impact, duration of impact, negative-impact indicators, and financial
-impact — these align closely with the severity factors described in the assessment brief.
+impact  these align closely with the severity factors described in the assessment brief.
 I used this explainability analysis as a model validation tool as much as an output: it let
 me assess whether the model's drivers are business-plausible rather than relying solely on
 predictive performance, and it's what led me to discover the `PredictedRemedyBand`
@@ -272,10 +272,10 @@ required numeric score), generated at `outputs/holdback_predictions.csv`.
   deployment.
 - **Potential leakage assumptions:** I couldn't confirm with the data owner whether
   `EstimatedImpactScore`, `EstimatedRiskScore`, `PredictedRemedyBand`, and
-  `ExpectedFinancialRedressGBP` are genuinely available at the point of initial triage —
+  `ExpectedFinancialRedressGBP` are genuinely available at the point of initial triage 
   my conservative model excludes these features on the assumption they aren't.
 - **Class 3 behaviour:** I noticed my calibrated binary decision, by prioritising
-  identification of 4–6 cases, rarely predicts class 3 — borderline cases get routed
+  identification of 4–6 cases, rarely predicts class 3  borderline cases get routed
   towards further investigation rather than treated as low severity. This is expected
   behaviour from my calibration choice, not a bug.
 - **Temporal validation:** I didn't perform temporal validation (training on earlier
