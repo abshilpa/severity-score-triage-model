@@ -25,6 +25,24 @@ My objective was to build a reproducible machine learning pipeline that:
 
 ---
 
+## Results at a Glance
+
+| Metric | Result |
+|---|---:|
+| Training cases | 2,000 |
+| Holdback cases | 500 |
+| Severity classes | 1–6 |
+| Primary model | Random Forest |
+| Primary triage objective | Recall for Severity 4–6 |
+| Validation severe-case recall | 97.5% |
+| Severe cases missed | 3 / 120 |
+| Selected triage threshold | 0.360 |
+| Holdback cases predicted as Progressed | 50% |
+
+
+I prioritised identifying severe cases over maximising overall accuracy, reflecting the
+requirement's stated low tolerance for missing severe cases.
+
 ## Repository Structure
 
 ```text
