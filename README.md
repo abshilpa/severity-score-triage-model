@@ -25,8 +25,27 @@ My objective was to build a reproducible machine learning pipeline that:
 
 ---
 
+## Results at a Glance
+
+| Metric | Result |
+|---|---:|
+| Training cases | 2,000 |
+| Holdback cases | 500 |
+| Severity classes | 1–6 |
+| Primary model | Random Forest |
+| Primary triage objective | Recall for Severity 4–6 |
+| Validation severe-case recall | 97.5% |
+| Severe cases missed | 3 / 120 |
+| Selected triage threshold | 0.360 |
+| Holdback cases predicted as Progressed | 50% |
+
+
+I prioritised identifying severe cases over maximising overall accuracy, reflecting the
+requirement's stated low tolerance for missing severe cases.
+
 ## Repository Structure
 
+```text
 severity-score-triage-model/
 │
 ├── data/
@@ -56,13 +75,13 @@ severity-score-triage-model/
 
 I used two datasets supplied as part of the assessment:
 
-- **Training Dataset** — 2,000 labelled complaint cases containing `SeverityScore`.
-- **Holdback Dataset** — 500 unlabelled cases used only for my final predictions.
-- **Data Dictionary** — definitions, allowed values, and expected ranges for the
+- **Training Dataset** - 2,000 labelled complaint cases containing `SeverityScore`.
+- **Holdback Dataset** - 500 unlabelled cases used only for my final predictions.
+- **Data Dictionary** - definitions, allowed values, and expected ranges for the
   supplied fields.
 
 I kept the original assessment data unmodified under `data/raw/` and did not edit it
-during preprocessing. I also kept the holdback dataset separate from model development —
+during preprocessing. I also kept the holdback dataset separate from model development 
 I never used it for feature selection, hyperparameter tuning, threshold selection, or
 model comparison; it was only used once, at the end, to generate final predictions.
 
@@ -148,9 +167,9 @@ features. I'm recording this documentation gap here rather than silently ignorin
 
 I engineered features to reflect the severity factors described in the assessment brief.
 
-**Ordinal features:** I ordinally encoded naturally ordered categorical variables —
+**Ordinal features:** I ordinally encoded naturally ordered categorical variables 
 `EmotionalImpactLevel`, `PhysicalImpactLevel`, `VulnerabilityLevel`, `EvidenceStrength`,
-`AgeBand` — to preserve their ordering rather than treating them as unordered categories.
+`AgeBand`  to preserve their ordering rather than treating them as unordered categories.
 
 **Derived features:** I built `NegativeImpactFlagCount`, `TotalIncurredFinancialImpactGBP`,
 and `VulnerabilityImpactInteraction` to capture combinations of financial impact,
@@ -168,7 +187,7 @@ information generated after, or during, the severity assessment process itself.
 During my exploratory analysis, I found `EstimatedImpactScore` and `EstimatedRiskScore`
 showed a very strong relationship with `SeverityScore`. Later, when I ran SHAP on an
 initial model, I found `PredictedRemedyBand` and `ExpectedFinancialRedressGBP` were among
-the strongest predictors — something my earlier numeric-only correlation check had missed,
+the strongest predictors  something my earlier numeric-only correlation check had missed,
 since `PredictedRemedyBand` is categorical. All four are described in the Data Dictionary
 as internal assessments, estimates, or recommendations.
 
@@ -206,10 +225,10 @@ I decided accuracy alone wasn't sufficient for this problem. Since the brief spe
 low tolerance for severe cases being classified as low severity, I evaluated both the
 six-class prediction task and the operational binary triage decision.
 
-**Six-class evaluation** — I looked at accuracy, macro F1, weighted F1, per-class
+**Six-class evaluation**  I looked at accuracy, macro F1, weighted F1, per-class
 precision/recall, and the confusion matrix.
 
-**Binary triage evaluation** — I grouped the six severity classes into 1–3 (Not
+**Binary triage evaluation**  I grouped the six severity classes into 1–3 (Not
 progressed) and 4–6 (Progressed), and treated **recall on the Progressed group** as my key
 business metric: the proportion of genuinely severe cases successfully flagged for
 investigation.
@@ -218,26 +237,36 @@ investigation.
 
 I compared the default multiclass prediction against a calibrated binary triage threshold:
 
+| Approach | Validation severe-case recall | Severe cases missed | False positives |
+|---|---:|---:|---:|
+| Default prediction | 85.8% | 17 / 120 | 34 / 280 |
+| Calibrated threshold | 97.5% | 3 / 120 | 87 / 280 |
 
-Approach	Severe-case recall	Severe cases missed	False positives
-Default prediction	85.8%	17 / 120	34 / 280
-Calibrated threshold	97.5%	3 / 120	87 / 280
+I selected a threshold of 0.360 (probability of belonging to the Progressed
+4–6 group) as the operating point. On the validation set, this increased
+severe-case recall from 85.8% to 97.5%, reducing missed severe cases from
+17 to 3 out of 120. The threshold was selected using the validation data,
+so the 97.5% recall should be treated as an operating-point estimate rather
+than an independent estimate of generalisation performance.
 
-I selected a threshold of 0.360 (probability of belonging to the Progressed 4–6 group) as
-my operating point. This increased severe-case recall from 85.8% to 97.5%, reducing missed
-severe cases from 17 to 3 in my validation set, at the cost of more cases being routed for
-further investigation. I consider this an appropriate trade-off given the brief's stated
-risk tolerance, where additional review effort is less costly than missing a genuinely
-severe case. One consequence worth flagging: on the holdback set, my model predicts 50% of
-cases as "Progressed", versus the ~30% base rate I observed in training.
+This higher recall comes at the cost of more cases being routed for further
+investigation. I consider this an appropriate trade-off given the brief's
+stated risk tolerance, where additional review effort is less costly than
+missing a genuinely severe case.
+
+One consequence worth flagging is that the model predicts 50% of holdback
+cases as "Progressed", compared with approximately 30% in the training data.
+This suggests the calibrated threshold would increase the review workload
+and should therefore be assessed against the organisation's available
+investigation capacity before production deployment.
 
 ### 9. Final Prediction Strategy
 
 My final prediction process uses a two-stage decision:
 
-- **Stage 1 — Binary triage:** the calibrated probability threshold determines whether a
+- **Stage 1  Binary triage:** the calibrated probability threshold determines whether a
   case is 1–3 (Not progressed) or 4–6 (Progressed).
-- **Stage 2 — Severity score:** I then take the most likely severity class *within* the
+- **Stage 2  Severity score:** I then take the most likely severity class *within* the
   selected band as the final `PredictedSeverityScore`.
 
 This ensures the numeric severity prediction is always consistent with the triage decision
@@ -248,7 +277,7 @@ it implies.
 I used SHAP (`TreeExplainer`) to investigate the behaviour of my final Random Forest
 model. The important drivers I found relate to recovery time, vulnerability, emotional
 impact, physical impact, duration of impact, negative-impact indicators, and financial
-impact — these align closely with the severity factors described in the assessment brief.
+impact  these align closely with the severity factors described in the assessment brief.
 I used this explainability analysis as a model validation tool as much as an output: it let
 me assess whether the model's drivers are business-plausible rather than relying solely on
 predictive performance, and it's what led me to discover the `PredictedRemedyBand`
@@ -272,10 +301,10 @@ required numeric score), generated at `outputs/holdback_predictions.csv`.
   deployment.
 - **Potential leakage assumptions:** I couldn't confirm with the data owner whether
   `EstimatedImpactScore`, `EstimatedRiskScore`, `PredictedRemedyBand`, and
-  `ExpectedFinancialRedressGBP` are genuinely available at the point of initial triage —
+  `ExpectedFinancialRedressGBP` are genuinely available at the point of initial triage 
   my conservative model excludes these features on the assumption they aren't.
 - **Class 3 behaviour:** I noticed my calibrated binary decision, by prioritising
-  identification of 4–6 cases, rarely predicts class 3 — borderline cases get routed
+  identification of 4–6 cases, rarely predicts class 3  borderline cases get routed
   towards further investigation rather than treated as low severity. This is expected
   behaviour from my calibration choice, not a bug.
 - **Temporal validation:** I didn't perform temporal validation (training on earlier
