@@ -26,7 +26,7 @@ My objective was to build a reproducible machine learning pipeline that:
 ---
 
 ## Repository Structure
-
+---
 severity-score-triage-model/
 │
 ├── data/
@@ -51,6 +51,7 @@ severity-score-triage-model/
 ├── LICENSE
 └── .gitignore
 
+---
 
 ## Data
 
