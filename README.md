@@ -50,7 +50,7 @@ severity-score-triage-model/
 ├── requirements.txt
 ├── LICENSE
 └── .gitignore
-```
+
 
 ## Data
 
