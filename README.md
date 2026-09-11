@@ -218,6 +218,15 @@ I optimised hyperparameters using `RandomizedSearchCV` (25 parameter combination
 stratified cross-validation), with the search objective prioritising recall of the binary
 triage decision rather than accuracy alone. My selected configuration:
 
+```
+n_estimators = 500
+max_depth = 8
+min_samples_split = 10
+min_samples_leaf = 2
+max_features = "log2"
+class_weight = "balanced"
+```
+
 
 ### 7. Business-Risk-Aware Evaluation
 
