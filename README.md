@@ -26,6 +26,7 @@ My objective was to build a reproducible machine learning pipeline that:
 ---
 
 ## Repository Structure
+
 ```text
 severity-score-triage-model/
 │
