@@ -94,7 +94,7 @@ def get_feature_columns(df: pd.DataFrame, include_leakage_risk: bool) -> list:
     versions of columns we ordinal-encoded. Set include_leakage_risk=False
     to build the more conservative, production-realistic feature set.
     """
-    exclude = {"CaseReference", "CaseCreatedDate", "SeverityScore"}
+    exclude = {"CaseReference", "CaseCreatedDate", "SeverityScore", "TriageOutcome"}
     exclude.update(ORDINAL_MAPS.keys())  # keep the _Ord versions instead
 
     if not include_leakage_risk:
