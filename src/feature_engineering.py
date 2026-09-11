@@ -43,8 +43,7 @@ BOOLEAN_IMPACT_FLAGS = [
 # process that assigns severity - i.e. not genuinely available ahead of
 # triage. Kept as an optional feature set so we can compare a model with
 # and without them.
-LEAKAGE_RISK_COLS = ["EstimatedImpactScore", "EstimatedRiskScore"]
-
+LEAKAGE_RISK_COLS = ["EstimatedImpactScore", "EstimatedRiskScore", "PredictedRemedyBand", "ExpectedFinancialRedressGBP"]
 
 def add_ordinal_encodings(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
